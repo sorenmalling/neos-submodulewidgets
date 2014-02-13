@@ -1,0 +1,29 @@
+<f:if condition="{packages}">
+	<f:then>
+		<table class="neos-table">
+			<thead>
+				<th>Package Name</th>
+				<th>Active?</th>
+			</thead>
+			<tbody>
+				<f:for each="{packages}" as="package">
+					<tr>
+						<td>
+								{package.name}
+						</td>
+						<td>
+							<f:if condition="{package.isActive}">
+								<f:then>
+									<i class="icon-thumbs-up"></i>
+								</f:then>
+								<f:else>
+									<i class="icon-thumbs-down"></i>
+								</f:else>
+							</f:if>
+						</td>
+					</tr>
+				</f:for>
+			</tbody>
+		</table>
+	</f:then>
+</f:if>

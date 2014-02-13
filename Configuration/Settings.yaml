@@ -1,0 +1,10 @@
+TYPO3:
+  Neos:
+    modules:
+      administration:
+        submodules:
+          packages:
+            label: 'EXAMPLE: Package'
+            controller: '\TYPO3\Neos\Controller\Module\Administration\PackagesController'
+            icon: 'icon-th-large'
+            submoduleWidgetObject: '\Meteko\Submodulewidgets\Widget\PackagesWidget'
