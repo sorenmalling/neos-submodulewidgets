@@ -3,8 +3,13 @@ TYPO3:
     modules:
       administration:
         submodules:
-          packages:
+          example1:
             label: 'EXAMPLE: Package'
             controller: '\TYPO3\Neos\Controller\Module\Administration\PackagesController'
             icon: 'icon-th-large'
             submoduleWidgetObject: '\Meteko\Submodulewidgets\Widget\PackagesWidget'
+          example2:
+            label: 'EXAMPLE: Chart'
+            controller: '\TYPO3\Neos\Controller\Module\Administration\PackagesController'
+            icon: 'icon-th-large'
+            submoduleWidgetObject: '\Meteko\Submodulewidgets\Widget\ChartsWidget'
